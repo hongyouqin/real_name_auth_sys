@@ -25,7 +25,10 @@ func main() {
 		}
 	})
 	fmt.Println("真名认证系统已启动")
-	http.ListenAndServe(":80", nil)
+	err := http.ListenAndServe(":80", nil)
+	if err != nil {
+		fmt.Println("err: ", err)
+	}
 }
 
 func verifyIDCard(idCard string, fullName string) bool {
