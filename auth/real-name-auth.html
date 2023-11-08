@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>实名认证</title>
+</head>
+<body>
+    <form id="authForm">
+        <label for="idCard">身份证号：</label>
+        <input type="text" id="idCard" name="idCard" required><br><br>
+        <label for="fullName">姓名：</label>
+        <input type="text" id="fullName" name="fullName" required><br><br>
+        <button type="button" onclick="submitForm()">提交</button>
+    </form>
+    <p id="result"></p>
+    <script src="auth.js"></script>
+</body>
+</html>
